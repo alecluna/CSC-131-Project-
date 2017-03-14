@@ -1,0 +1,89 @@
+* { 
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial;
+
+}
+
+
+#logo, #teamname {
+
+    height: 30%;
+    font-size: 45px;
+    letter-spacing: 2px;
+    color: white;
+}
+
+
+
+#logo {
+
+    width: 30%;
+    float: left;
+    background-color: darkgreen;
+}
+
+#teamname {
+
+    width: 70%;
+    float: left;
+    background-color: darkgreen;
+    text-align: center;
+}
+
+.content {
+
+    background-color: palegoldenrod;
+    /* will change height to 70% later */
+    padding-top: 20%;
+    height: 700px;
+    text-align: center;
+
+}
+
+.content_class {
+
+    border: solid black;
+    height: 600px;
+    width: 1000px;
+    margin: 0 auto;
+    
+}
+
+/*
+h1 {
+
+    text-align: center;
+    background-color: #009688;
+    height: 300px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 300px; 
+}
+
+li {
+    list-style-type: none;
+    display: inline;
+    
+}
+
+.header {
+        height: 500px;
+        background-color: #2196F3;
+        text-align: center;
+        vertical-align: middle;
+        line-height: 500px; 
+}
+
+.database {
+
+    min-height: 400px;
+    min-width: 100%;
+    background-color: #3F51B5;
+    text-align: center;
+    padding-top: 10%;
+}
+
+
+
+
