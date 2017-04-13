@@ -1,0 +1,100 @@
+* { 
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial;
+
+}
+
+
+#logo, #teamname {
+
+    height: 30%;
+    font-size: 45px;
+    letter-spacing: 2px;
+    color: white;
+}
+
+
+
+#logo {
+
+    width: 30%;
+    float: left;
+    background-color: rgb(0, 87, 60);;
+}
+
+#teamname {
+
+    width: 70%;
+    float: left;
+    background-color: rgb(0, 87, 60);;
+    text-align: center;
+}
+
+.content {
+
+    background-color: rgb(194, 177, 116);
+    height: 100%;
+    padding-top: 20%;
+    height: 7;
+    text-align: center;
+
+}
+
+.home-page {
+  position: relative;
+  z-index: 1;
+  background: #FFFFFF;
+  height: 500px;
+  max-width: 800px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+ul {
+    list-style-type: none;
+    margin-top: 13%;
+}
+
+.list-buttons {
+
+      text-transform: uppercase;
+}
+
+button {
+
+    background: #4CAF50;
+    width: 70%;
+    border: 0;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    margin: 0 0 15;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    
+}
+
+button:hover,.form button:active,.form button:focus 
+{
+  background: #43A047;
+}
+
+li 
+{
+
+    margin: 25px;
+}
+
+#admin-header {
+
+    font-size: 36px;
+    font-family: sans-serif;
+    color: white;
+    position: center;
+}
+
+
+
+
