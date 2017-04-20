@@ -87,7 +87,7 @@ li
     margin: 25px;
 }
 
-#admin-header {
+#admin-header, #student-header {
 
     font-size: 36px;
     font-family: sans-serif;

@@ -1,40 +1,4 @@
 <!DOCTYPE html>
-
-<?php
-
-	$db = mysqli_connect('localhost', 'root', '', 'testdb'); 
-
-	if (!$db)
-	{
-	   die('Error connecting to MySQL server. Is this your error?.');
-	}
-
-	echo "connection succesful";
-
-   //$selected = mysqli_select_db($db, 'testdb')
-     //   or die("Unable to connect");
-
-   $result = mysqli_query($db, "SELECT * FROM table_one");
-   echo "" . mysqli_num_rows($result);
-
-   while ($row = mysqli_fetch_assoc($result)) 
-   {
-      echo " ". $row["alecluna"];
-   }
-
-  /*init session
-  session_start();
-
-  if(isset($_SESSION["user"]) && $_SESSION["user"] == true)) 
-  {
-  // show the password protected page
-  } else 
-  {
-  // redirect to the login page
-  header('Location: login.php');
-  die();*/
-?>
-
 <html>
 
 <head>
@@ -61,13 +25,13 @@
         <div id="teamname">
 
           <!--link our team name here i CSS -->
-          <a> Titan Software </a>
+          <a> Admin </a>
 
           </div>
     </div>
 
     <div class="content">
-    <a ID="admin-header"> Admin Page </a>
+    <a ID="admin-header"> Menu Page </a>
 
       <div class="home-page">
 
@@ -79,6 +43,39 @@
             <li id="changeData"><button onclick="changeData()"> Change My Data </button> </li>
           </ul>
           </div>
+
+          <?php
+
+	$db = mysqli_connect('localhost', 'root', '', 'testdb'); 
+
+	if (!$db)
+	{
+	   die('Error connecting to MySQL server. Is this your error?.');
+	}
+
+	echo "connection succesful";
+
+   $result = mysqli_query($db, "SELECT * FROM table_one");
+
+   while ($row = mysqli_fetch_assoc($result)) 
+   {
+      echo " ". $row["alecluna"];
+         echo "" . mysqli_num_rows($result); 
+
+   }
+
+  /*init session
+  session_start();
+
+  if(isset($_SESSION["user"]) && $_SESSION["user"] == true)) 
+  {
+  // show the password protected page
+  } else 
+  {
+  // redirect to the login page
+  header('Location: login.php');
+  die();*/
+?>
 
       </div>
       <script>
@@ -100,7 +97,7 @@
       {
 
         //williams insert data page
-        window.open("http://athena.ecs.csus.edu/~rybachuw/Insert%20Page.html");
+        window.open("http://athena.ecs.csus.edu/~rybachuw/");
 
       }
 
